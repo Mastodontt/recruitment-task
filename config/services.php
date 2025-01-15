@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Third Party Services
@@ -35,4 +34,8 @@ return [
         ],
     ],
 
+    'petstore' => [
+        'url' => env('PETSTORE_URL', 'https://petstore.swagger.io/v2'),
+        'timeout' => env('PETSTORE_TIMEOUT', 10),
+    ],
 ];
